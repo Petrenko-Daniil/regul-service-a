@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name')->nullable();
             $table->string('email')->unique()->nullable();
-            $table->string('chat_id');
+            $table->string('chat_id')->unique();
             $table->timestamps();
         });
     }
